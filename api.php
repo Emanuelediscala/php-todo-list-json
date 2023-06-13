@@ -30,10 +30,10 @@ else if( isset($_POST['change'] )) {
     $todoListDati[$indice]["done"] = !$todoListDati[$indice]["done"];
     file_put_contents("dati.json", json_encode($todoListDati) );
 }
-else if( isset($_POST['editing'] )) {
+else if( isset($_POST['editing'])) {
     $indice = $_POST['index'];
     $editedtext = $_POST["editing"];
-    $todoListDati[$indice]["name= $editedtext"];
+    $todoListDati[$indice]["name"] = $editedtext;
     file_put_contents("dati.json", json_encode($todoListDati) );
 }
 

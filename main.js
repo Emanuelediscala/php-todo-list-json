@@ -36,6 +36,8 @@ createApp({
                 editing: this.editingText,
                 index : i
             }
+            this.sendData(data);
+
         },
         checkStatus(i) {
         
